@@ -44,8 +44,8 @@ SELECT * FROM AddressBookDB;
 INSERT INTO AddressBookDB(FirstName, LastName, Address, City,State, Zip, PhoneNumber, EmailID ) VALUES(
 'Sandeep','Singh','Kashi','Varanasi','Uttarpradesh',834651,997642311,'sandeep@gmail.com'),
 ('Emros','Lohra','Kusumvihar','Ranchi','Jharkhand',834691,997242312,'emros@gmail.com'),
-('Ravi','Yadav','Madhubani','Namkom','Jharkhand',834690,997242313,'emros@gmail.com'),
-('Rakesh','Mahto','Bariatu','Bootymore','Jharkhand',834690,997242314,'emros@gmail.com'),
+('Ravi','Yadav','Madhubani','Namkom','Jharkhand',834690,997242313,'ravi@gmail.com'),
+('Rakesh','Mahto','Bariatu','Bootymore','Jharkhand',834690,997242314,'rakesh@gmail.com'),
 ('Pawan','Kumar','Khelgaon','Tatilswe','Jharkhand',834699,997242315,'pawan45@gmail.com');
 
 --UC4 Ability to edit existing contact person using their name
@@ -54,3 +54,7 @@ UPDATE AddressBookDB SET City='Delhi' WHERE FirstName='Ravi';
 --UC5 Ability to delete a person using a persons name
 DELETE AddressBookDB WHERE FirstName='Pawan';
 SELECT * FROM AddressBookDB;
+
+--UC6 Ability to retrieve Person Belonging to a city or state from the AddressBook
+		SELECT * FROM AddressBookDB WHERE City='Ranchi';
+		SELECT * FROM AddressBookDB WHERE State='Jharkhand';
