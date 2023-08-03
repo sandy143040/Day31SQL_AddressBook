@@ -67,3 +67,19 @@ SELECT COUNT(*) FROM AddressBookDB WHERE City='Jharkhand';
 SELECT * FROM AddressBookDB WHERE City='Ranchi' ORDER BY FirstName ASC;
 SELECT * FROM AddressBookDB ORDER BY City DESC
 SELECT * FROM AddressBookDB ORDER BY FirstName;
+
+--UC9-Ability to identify each addressbook with name and type
+        ALTER TABLE AddressBookDB ADD AddressBookType VARCHAR(50);
+		ALTER TABLE AddressBookDB ADD AddressBookName VARCHAR(50);
+		UPDATE AddressBookDB SET AddressBookType='Friends' ,AddressBookName='AJ' 
+		WHERE PersonID='2'
+		UPDATE AddressBookDB SET AddressBookType='Family' ,AddressBookName='CD' 
+		WHERE PersonID='3'
+		UPDATE AddressBookDB SET AddressBookType='Friends' ,AddressBookName='YD' 
+		WHERE PersonID='4'
+		UPDATE AddressBookDB SET AddressBookType='Profession' ,AddressBookName='UV' 
+		WHERE PersonID='5'
+		UPDATE AddressBookDB SET AddressBookType='Relatives' ,AddressBookName='MD' 
+		WHERE PersonID='1'
+		SELECT * FROM AddressBookDB;
+		
