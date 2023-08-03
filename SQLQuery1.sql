@@ -87,4 +87,10 @@ SELECT * FROM AddressBookDB ORDER BY FirstName;
         SELECT AddressBookType,COUNT(AddressBookType) AS Sandeep FROM AddressBookDB  
         GROUP BY AddressBookType;
 		--here Sandeep is variable which will store AddressBook count
+
+--UC11 Ability to add person to both Friend and Family
+  INSERT INTO AddressBookDB(FirstName,LastName,Address,City,State,Zip,PhoneNumber,EmailID,AddressBookType,AddressBookName)
+  VALUES('Khagen','Munda','Katatoli','Bundu','Jharkhand',879420,9489614080,'khagen@gmail.com','Friends','TS');
+  SELECT * FROM AddressBookDB;
+
 		
