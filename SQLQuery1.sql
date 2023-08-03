@@ -50,3 +50,7 @@ INSERT INTO AddressBookDB(FirstName, LastName, Address, City,State, Zip, PhoneNu
 
 --UC4 Ability to edit existing contact person using their name
 UPDATE AddressBookDB SET City='Delhi' WHERE FirstName='Ravi';
+
+--UC5 Ability to delete a person using a persons name
+DELETE AddressBookDB WHERE FirstName='Pawan';
+SELECT * FROM AddressBookDB;
