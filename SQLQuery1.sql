@@ -47,3 +47,6 @@ INSERT INTO AddressBookDB(FirstName, LastName, Address, City,State, Zip, PhoneNu
 ('Ravi','Yadav','Madhubani','Namkom','Jharkhand',834690,997242313,'emros@gmail.com'),
 ('Rakesh','Mahto','Bariatu','Bootymore','Jharkhand',834690,997242314,'emros@gmail.com'),
 ('Pawan','Kumar','Khelgaon','Tatilswe','Jharkhand',834699,997242315,'pawan45@gmail.com');
+
+--UC4 Ability to edit existing contact person using their name
+UPDATE AddressBookDB SET City='Delhi' WHERE FirstName='Ravi';
