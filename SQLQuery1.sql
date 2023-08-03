@@ -82,4 +82,9 @@ SELECT * FROM AddressBookDB ORDER BY FirstName;
 		UPDATE AddressBookDB SET AddressBookType='Relatives' ,AddressBookName='MD' 
 		WHERE PersonID='1'
 		SELECT * FROM AddressBookDB;
+
+		--UC10-Ability to get number of contact person i.e count type
+        SELECT AddressBookType,COUNT(AddressBookType) AS Sandeep FROM AddressBookDB  
+        GROUP BY AddressBookType;
+		--here Sandeep is variable which will store AddressBook count
 		
