@@ -38,3 +38,12 @@ PhoneNumber BIGINT NOT NULL,
 EmailID VARCHAR(50) NOT NULL)
 
 
+--UC3: Insert new Contacts to AddressBook
+SELECT * FROM AddressBookDB;
+
+INSERT INTO AddressBookDB(FirstName, LastName, Address, City,State, Zip, PhoneNumber, EmailID ) VALUES(
+'Sandeep','Singh','Kashi','Varanasi','Uttarpradesh',834651,997642311,'sandeep@gmail.com'),
+('Emros','Lohra','Kusumvihar','Ranchi','Jharkhand',834691,997242312,'emros@gmail.com'),
+('Ravi','Yadav','Madhubani','Namkom','Jharkhand',834690,997242313,'emros@gmail.com'),
+('Rakesh','Mahto','Bariatu','Bootymore','Jharkhand',834690,997242314,'emros@gmail.com'),
+('Pawan','Kumar','Khelgaon','Tatilswe','Jharkhand',834699,997242315,'pawan45@gmail.com');
