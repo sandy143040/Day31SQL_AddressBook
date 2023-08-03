@@ -62,3 +62,8 @@ SELECT * FROM AddressBookDB;
 --UC7-Ability to understand the size of addressbook by city and state
 SELECT COUNT(*) FROM AddressBookDB WHERE City='Ranchi';
 SELECT COUNT(*) FROM AddressBookDB WHERE City='Jharkhand';
+
+--UC8-Ability to retrieve entries sorted alphabatically by Person's name for a given 
+SELECT * FROM AddressBookDB WHERE City='Ranchi' ORDER BY FirstName ASC;
+SELECT * FROM AddressBookDB ORDER BY City DESC
+SELECT * FROM AddressBookDB ORDER BY FirstName;
