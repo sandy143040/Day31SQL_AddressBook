@@ -58,3 +58,7 @@ SELECT * FROM AddressBookDB;
 --UC6 Ability to retrieve Person Belonging to a city or state from the AddressBook
 		SELECT * FROM AddressBookDB WHERE City='Ranchi';
 		SELECT * FROM AddressBookDB WHERE State='Jharkhand';
+
+--UC7-Ability to understand the size of addressbook by city and state
+SELECT COUNT(*) FROM AddressBookDB WHERE City='Ranchi';
+SELECT COUNT(*) FROM AddressBookDB WHERE City='Jharkhand';
